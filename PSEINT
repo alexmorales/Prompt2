@@ -1,0 +1,21 @@
+Algoritmo AhorroParaViaje
+    Definir ahorroMensual, meta, meses Ahora Como Real
+
+    Escribir "Ingrese la cantidad de dinero que puede ahorrar cada mes: "
+    Leer ahorroMensual
+
+    Mientras meta <= 0 Hacer
+        Escribir "Ingrese la cantidad de dinero que desea alcanzar para el viaje: "
+        Leer meta
+        Si meta <= 0 Entonces
+            Escribir "La cantidad ingresada no es válida. Por favor ingrese un valor mayor que cero."
+        Fin Si
+    Fin Mientras
+
+    meses <- 0
+    Mientras ahorroMensual * meses < meta Hacer
+        meses <- meses + 1
+    Fin Mientras
+
+    Escribir "Necesitará ahorrar durante ", meses, " meses para alcanzar la meta de dinero para el viaje."
+FinAlgoritmo
